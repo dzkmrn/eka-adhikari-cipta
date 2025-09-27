@@ -59,28 +59,34 @@
 
             <!-- Cards -->
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
-                <div class="flex flex-col items-center">
-                    <h2 class="text-2xl font-bold text-secondary mb-4">ABOUT US</h2>
-                    <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
-                        <img src="{{ asset('images/ABOUT-US.png') }}" alt="about us"
-                            class="w-full h-full object-cover object-center">
+                <a href="{{ route('about') }}">
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-2xl font-bold text-secondary mb-4">ABOUT US</h2>
+                        <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
+                            <img src="{{ asset('images/ABOUT-US.png') }}" alt="about us"
+                                class="w-full h-full object-cover object-center">
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="flex flex-col items-center">
-                    <h2 class="text-2xl font-bold text-secondary mb-4">COLLECTION</h2>
-                    <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
-                        <img src="{{ asset('images/COLLECTION.png') }}" alt="collection"
-                            class="w-full h-full object-cover object-bottom">
+                <a href="{{ route('collection') }}">
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-2xl font-bold text-secondary mb-4">COLLECTION</h2>
+                        <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
+                            <img src="{{ asset('images/COLLECTION.png') }}" alt="collection"
+                                class="w-full h-full object-cover object-bottom">
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="flex flex-col items-center">
-                    <h2 class="text-2xl font-bold text-secondary mb-4">CONTACT US</h2>
-                    <div class="w-full h-[250px] rounded-t-3xl flex items-center justify-center bg-[#545454]">
-                        <img src="{{ asset('images/LOGO.png') }}" alt="contact logo" class="h-32 w-auto" style="scale: 2.5;">
+                <a href="{{ route('contact') }}">
+                    <div class="flex flex-col items-center">
+                        <h2 class="text-2xl font-bold text-secondary mb-4">CONTACT US</h2>
+                        <div class="w-full h-[250px] rounded-t-3xl flex items-center justify-center bg-[#545454]">
+                            <img src="{{ asset('images/LOGO.png') }}" alt="contact logo" class="h-32 w-auto" style="scale: 2.5;">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -127,8 +133,7 @@
             <!-- Slider -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    @foreach(['EAC1020.png', 'EAC1021.png', 'EAC1022.png', 'EAC1023.png', 
-                     'EAC1024.png', 'EAC1025.png', 'EAC1026.png', 'EAC1027.png'] as $product)
+                    @foreach(['EAC1236.png', 'EAC1023.png', 'EAC1022.png', 'EAC1238.png', 'EAC1020.png', 'EAC1247.png', 'EAC1237.png', 'EAC204.png'] as $product)
                         <div class="swiper-slide">
                             <div class="bg-primary rounded-2xl p-6 flex justify-center items-center">
                                 <img src="{{ asset('images/product/' . $product) }}" alt="{{ $product }}" class="rounded-xl max-h-64 object-contain">

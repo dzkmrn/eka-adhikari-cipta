@@ -22,6 +22,7 @@
         .bg-image-light {
             background-image: url('{{ asset('images/LIGHT-BG.png') }}');
         }
+
         .bg-image-dark {
             background-image: url('{{ asset('images/DARK-BG.png') }}');
         }
@@ -30,37 +31,38 @@
 
 <body class="font-sans antialiased bg-image-light text-dark">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50">
         <!-- Main navigation with brown background -->
-        <div class="backdrop-blur-md border-b border-gray-200">
+        <div class="bg-transparent backdrop-blur-xs">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-around items-center h-16 border-b border-[#938272]">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
-                        <img src="{{ asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto" style="scale: 1.5;">
+                        <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto"
+                            style="scale: 1.5;">
                     </div>
 
                     <!-- Navigation Links -->
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
                             <a href="{{ route('home') }}"
-                                class="nav-link px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
                                 HOME
                             </a>
                             <a href="{{ route('about') }}"
-                                class="nav-link px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
                                 ABOUT US
                             </a>
                             <a href="{{ route('collection') }}"
-                                class="nav-link px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
                                 COLLECTION
                             </a>
                             <a href="{{ route('hot-product') }}"
-                                class="nav-link px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
                                 HOT PRODUCT
                             </a>
                             <a href="{{ route('contact') }}"
-                                class="nav-link px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
                                 CONTACT US
                             </a>
                         </div>
@@ -69,7 +71,7 @@
                     <!-- Mobile menu button -->
                     <div class="md:hidden">
                         <button type="button"
-                            class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md {{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? 'text-white' : 'text-gray-400' }} hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -103,7 +105,7 @@
                     class="nav-link block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary' : '' }}">
                     COLLECTION
                 </a>
-                <a href="{{ route('home') }}#hot-product"
+                <a href="{{ route('hot-product') }}"
                     class="nav-link block px-3 py-2 text-base font-medium text-gray-800 hover:text-primary transition-colors duration-200">
                     HOT PRODUCT
                 </a>
@@ -116,7 +118,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-16">
+    <main class="">
         @yield('content')
     </main>
 
@@ -126,7 +128,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Column 1 - Company Info -->
                 <div>
-                    <div class="w-8 h-8 bg-blue-500 rounded-sm mb-4"></div>
+                    <img src="{{ asset('images/LOGO.png') }}" alt="logo-footer" class="h-16 w-auto mb-4">
+                    {{-- <div class="w-8 h-8 bg-blue-500 rounded-sm mb-4"></div> --}}
                     <h3 class="text-lg font-bold text-gray-800 mb-4">EKA ADHIKARI CIPTA</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         Eka adhikari cipta is your trusted source for premium rattan furniture. We bring you
@@ -213,20 +216,10 @@
         });
     </script>
     <script>
-        const navbar = document.getElementById("navbar");
+        
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 0) {
-                // pas di-scroll
-                navbar.classList.add("bg-transparent");
-                navbar.classList.remove("bg-image-light");
-            } else {
-                // posisi paling atas (tidak scroll)
-                navbar.classList.remove("bg-transparent");
-                navbar.classList.add("bg-image-light");
-            }
-        });
     </script>
+    @stack('scripts')
 </body>
 
 </html>

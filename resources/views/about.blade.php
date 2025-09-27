@@ -101,22 +101,22 @@
             </div>
         </div>
     </section>
-    <section class="py-16 px-4 bg-image-dark object-cover bg-center bg-no-repeat">
+    <section class="my-6 py-16 px-4 bg-image-dark object-cover bg-center bg-no-repeat">
         <div class="max-w-7xl mx-auto space-y-8">
             <div>
                 <h1 class="text-center text-4xl md:text-6xl font-bold text-white mb-6">INTRODUCING OUR TEAM</h1>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 mb-0 items-top">
-                <div class="bg-[#E6E6E6] ms-4">
+                <div class="bg-[#E6E6E6] ms-0 md:ms-4">
                     <img src="{{ asset('images/person/CEO.png') }}" alt="CEO">
                 </div>
-                <div class="flex flex-col gap-4">
+                <div class="flex flex-col">
                     <div class="relative h-fit p-8 bg-[#ECECEC]">
-                        <h1 class="text-[#404040] text-3xl">ADEN P. MUNTAZ</h1>
-                        <p class="text-[#404040] text-xl">CEO of Eka Adhikari Cipta</p>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl">ADEN P. MUNTAZ</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">CEO of Eka Adhikari Cipta</p>
                     </div>
                     <div class="relative p-8 bg-[#DDDDDD] h-full">
-                        <p class="text-[#404040] ">Aden Paiq Muntaz was born with honor in
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">Aden Paiq Muntaz was born with honor in
                             Tegal, Indonesia. Mr. Muntaz possesses
                             dynamic leadership skills with professional
                             experience in Human Resources
@@ -127,6 +127,77 @@
                             marketing expertise equips him to identify
                             global trends, design marketing strategies,
                             and develop a strong international network.</p>
+                    </div>
+                </div>
+                <div class="bg-[#E6E6E6] flex flex-col">
+                    <img src="{{ asset('images/person/CFO.png') }}" alt="CFO" class="w-full md:w-auto">
+                    <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
+                        <h1 class="text-[#404040] text-3xl md:text-6xl">ABDUL MALIK K. A.</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Finance Officer</p>
+                    </div>
+                    <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With his experience in finance, Abdul
+                            Malik
+                            has developed expertise in financial
+                            management, budgeting, and corporate cash
+                            flow management. Accuracy and integrity are
+                            his guiding principles in every financial
+                            decision, making him an important pillar in
+                            maintaining the stability and growth of the
+                            company.</p>
+                    </div>
+                </div>
+
+                <!-- COO -->
+                <div class="bg-[#E6E6E6] flex flex-col">
+                    <img src="{{ asset('images/person/COO.png') }}" alt="COO" class="w-full md:w-auto">
+                    <div class="h-fit p-8 bg-[#ECECEC] w-full">
+                        <h1 class="text-[#404040] text-3xl md:text-6xl">M. ZACKY SULTHONI</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Operational Officer</p>
+                    </div>
+                    <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">M. Zacky Sulthoni has experience and
+                            expertise in managing production processes,
+                            ensuring efficiency, and maintaining product
+                            quality in accordance with international
+                            standards. His leadership and consistency in
+                            organizing workflows make him a key driving
+                            force in the smooth operation of the company.</p>
+                    </div>
+                </div>
+                <div class="bg-[#E6E6E6] flex flex-col">
+                    <img src="{{ asset('images/person/CMO.png') }}" alt="CMO" class="w-full md:w-auto">
+                    <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
+                        <h1 class="text-[#404040] text-3xl md:text-6xl">IRGI AQIL D. M.</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Marketing Officer</p>
+                    </div>
+                    <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With experience in marketing and
+                            customer
+                            management, Irgi has expertise in building
+                            long-term relationships with clients and
+                            developing effective marketing strategies. His
+                            ability to understand customer needs makes
+                            him a leader in expanding networks and
+                            maintaining customer loyalty.</p>
+                    </div>
+                </div>
+
+                <!-- CIO -->
+                <div class="bg-[#E6E6E6] flex flex-col">
+                    <img src="{{ asset('images/person/CIO.png') }}" alt="CIO" class="w-full md:w-auto">
+                    <div class="h-fit p-8 bg-[#ECECEC] w-full">
+                        <h1 class="text-[#404040] text-3xl md:text-6xl">ABDUL AFIF</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Information Officer</p>
+                    </div>
+                    <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With his strong technological expertise,
+                            Abdul Afif focuses on developing information
+                            systems and implementing digital solutions
+                            that support operational efficiency within the
+                            company. His dedication to utilizing the latest
+                            technology ensures that the company remains
+                            adaptive and competitive in the digital age.</p>
                     </div>
                 </div>
             </div>

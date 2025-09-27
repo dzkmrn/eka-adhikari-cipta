@@ -3,23 +3,29 @@
 @section('title', 'Collection - Eka Adhikari Cipta')
 @section('description', 'Our Collection - Woven Furniture by Eka Adhikari Cipta')
 
+@push('styles')
+    <style>
+        .bg-img-collection {
+            background-image: url('{{ asset('images/COLLECTION-BG.png') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .text-nav {
+            color: white !important;
+        }
+    </style>
+@endpush
+
 @section('content')
-    <!-- Hero Section -->
-    {{-- <section class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
-        style="background-image: url('{{ asset('storage/images/COLLECTION BG.png') }}');">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-wider">OUR COLLECTION</h1>
-            <h2 class="text-4xl md:text-6xl font-normal uppercase tracking-wider">WOVEN FURNITURE</h2>
-        </div>
-    </section> --}}
-    <section class="relative min-h-screen flex items-top justify-center bg-[#FDFDFD]/90 pt-20">
+    <section class="relative min-h-screen flex items-center bg-img-collection justify-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 m-auto">
-                <h1 class="text-5xl md:text-7xl font-bold text-primary mb-4 uppercase tracking-wider">
+                <h1 class="text-5xl md:text-8xl font-bold text-white mb-4 uppercase tracking-wider">
                     OUR COLLECTION
                 </h1>
-                <p class="text-lg text-primary mt-4">
+                <p class="text-3xl md:text-7xl text-white mt-4">
                     WOVEN FURNITURE
                 </p>
             </div>
@@ -27,15 +33,25 @@
     </section>
 
     <!-- Product Grid Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-image-light object-cover bg-no-repeat bg-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 @foreach($paginatedProducts as $product)
+                    @php
+                        $colors = ['#545454', '#404040', '#919191', '#545454'];
+                        $bgColor = $colors[$loop->index % count($colors)];
+                    @endphp
+
                     <div class="rounded-lg overflow-hidden">
                         <!-- Product Image -->
-                        <div class="aspect-square bg-gray-50">
-                            <img src="{{ asset('storage/images/' . $product['image']) }}" alt="{{ $product['name'] }}"
-                                class="w-full h-full object-cover">
+                        <div class="aspect-square relative flex items-center justify-center">
+                            <div class="absolute inset-0"
+                                style="background: linear-gradient(to top, {{ $bgColor }} 50%, transparent 50%);">
+                            </div>
+                            <img src="{{ asset('images/product/' . $product['image']) }}" alt="{{ $product['name'] }}"
+                                class="h-full object-cover bg-center z-20">
+
+                            <!-- Overlay 70% bawah -->
                         </div>
 
                         <!-- Product Details -->
@@ -65,7 +81,7 @@
                         @for($i = 1; $i <= $totalPages; $i++)
                             <a href="{{ request()->fullUrlWithQuery(['page' => $i]) }}"
                                 class="min-w-[40px] h-10 flex items-center justify-center text-sm font-semibold transition-colors duration-200
-                                              {{ $i == $currentPage ? 'bg-[#938272] text-[#fdfdfd]' : 'bg-[#404040] text-[#fdfdfd] hover:bg-[#404040]/90 border border-gray-200' }}">
+                                                                      {{ $i == $currentPage ? 'bg-[#938272] text-[#fdfdfd]' : 'bg-[#404040] text-[#fdfdfd] hover:bg-[#404040]/90 border border-gray-200' }}">
                                 {{ $i }}
                             </a>
                         @endfor
