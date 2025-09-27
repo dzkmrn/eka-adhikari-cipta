@@ -10,12 +10,12 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
     
     /* Eka Adhikari Cipta Color Palette */
-    --color-primary: #8B4513;      /* Brown primary */
+    --color-primary: #545454;      /* Brown primary */
     --color-primary-light: #A0522D; /* Light brown */
     --color-primary-dark: #654321;  /* Dark brown */
-    --color-secondary: #D2B48C;     /* Tan/beige */
+    --color-secondary: #938272;     /* Tan/beige */
     --color-accent: #CD853F;        /* Peru */
-    --color-neutral: #F5F5DC;       /* Beige */
+    --color-neutral: #FDFDFD;       /* Beige */
     --color-dark: #2F2F2F;          /* Dark gray */
     --color-light: #FAFAFA;         /* Light gray */
 }
@@ -162,6 +162,10 @@ html {
 /* Mobile menu styles */
 .mobile-menu {
     transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide {
+  width: 250px; /* atau sesuai kebutuhan */
 }
 
 /* Custom scrollbar with brown palette */

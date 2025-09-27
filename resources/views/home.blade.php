@@ -3,192 +3,155 @@
 @section('title', 'Home - Eka Adhikari Cipta')
 @section('description', 'Your Trusted For Rattan Quality - Eka Adhikari Cipta')
 
-@section('content')
-<!-- Warm Greeting Section -->
-<section class="relative min-h-screen bg-neutral py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h1 class="text-5xl md:text-7xl font-bold text-primary mb-4 uppercase tracking-wider">
-                WARM GREETING
-            </h1>
-            <p class="text-lg text-primary-dark mt-4">
-                FROM EKA ADHIKARI CIPTA
-            </p>
-        </div>
+@push('styles')
+    <style>
+        .bg-image-home {
+            background-image: url('{{ asset('images/HOME-BG.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
-        <!-- Logo and Description -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-                <img src="{{ asset('storage/images/logo.png') }}" alt="EAC Logo" class="w-48 mx-auto md:mx-0">
-            </div>
-            <div>
-                <p class="text-primary-dark leading-relaxed">
-                    EKA ADHIKARI CIPTA is a state-owned source for premium rattan furniture. We bring you high quality and durable furniture that reflects your taste for elegance and quality.
+        .bg-image-about-us-lite {
+            background-image: url('{{ asset('images/ABOUT-US.png') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .shadow-up {
+            box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2); /* X | Y | blur | color */
+        }
+
+        .bg-img-custom {
+            background-image: url('{{ asset('images/CUSTOM.png') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+@endpush
+
+@section('content')
+    <!-- Warm Greeting Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-image-home bg-left md:bg-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 m-auto relative -translate-y-[70px]">
+                <h1 class="text-5xl md:text-9xl font-bold text-primary mb-4 uppercase tracking-wider">
+                    YOUR TRUSTED
+                </h1>
+                <p class="text-3xl md:text-7xl text-primary mt-4">
+                    FOR RATTAN QUALITY
                 </p>
             </div>
         </div>
+    </section>
 
-        <!-- Team Photos -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            @foreach(['team1.jpg', 'team2.jpg', 'team3.jpg', 'team4.jpg'] as $photo)
-                <img src="{{ asset('storage/images/' . $photo) }}" alt="Team Member" class="w-full h-64 object-cover rounded-lg">
-            @endforeach
-        </div>
-    </div>
-</section>
+    <!-- Start the tour Section -->
+    <section class="pt-20 bg-image-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<!-- Introducing Our Team Section -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 uppercase tracking-wider">
-                INTRODUCING OUR TEAM
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- CEO -->
-            <div class="text-center">
-                <img src="{{ asset('storage/images/ADEN.png') }}" alt="Aden P. Muntaz" class="w-48 h-48 mx-auto rounded-full mb-6">
-                <h3 class="text-2xl font-bold text-primary mb-2">ADEN P. MUNTAZ</h3>
-                <p class="text-primary-dark">Chief Executive Officer</p>
-            </div>
-
-            <!-- COO -->
-            <div class="text-center">
-                <img src="{{ asset('storage/images/ABDUL.png') }}" alt="Abdul Malik K. A." class="w-48 h-48 mx-auto rounded-full mb-6">
-                <h3 class="text-2xl font-bold text-primary mb-2">ABDUL MALIK K. A.</h3>
-                <p class="text-primary-dark">Chief Operational Officer</p>
-            </div>
-
-            <!-- CPO -->
-            <div class="text-center">
-                <img src="{{ asset('storage/images/ZACKY.png') }}" alt="M. Zacky Sulthoni" class="w-48 h-48 mx-auto rounded-full mb-6">
-                <h3 class="text-2xl font-bold text-primary mb-2">M. ZACKY SULTHONI</h3>
-                <p class="text-primary-dark">Chief Production Officer</p>
-            </div>
-
-            <!-- CMO -->
-            <div class="text-center">
-                <img src="{{ asset('storage/images/IRGI.png') }}" alt="Irgi Adil D. M." class="w-48 h-48 mx-auto rounded-full mb-6">
-                <h3 class="text-2xl font-bold text-primary mb-2">IRGI ADIL D. M.</h3>
-                <p class="text-primary-dark">Chief Marketing Officer</p>
-            </div>
-
-            <!-- CTO -->
-            <div class="text-center">
-                <img src="{{ asset('storage/images/AFIF.png') }}" alt="Abdul Afif" class="w-48 h-48 mx-auto rounded-full mb-6">
-                <h3 class="text-2xl font-bold text-primary mb-2">ABDUL AFIF</h3>
-                <p class="text-primary-dark">Chief Technology Officer</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Limited Offering Section -->
-<section class="bg-dark py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center mb-12">
-            <div>
-                <h2 class="text-5xl font-bold text-white mb-2 uppercase tracking-wider">LIMITED OFFERING</h2>
-                <p class="text-lg text-white/80">OUR BEST DEAL</p>
-            </div>
-            <button class="bg-primary text-white px-8 py-3 rounded-lg uppercase hover:bg-primary-dark transition">
-                SCROLL DOWN
-            </button>
-        </div>
-
-        <!-- Featured Product -->
-        <div class="relative h-96 mb-16">
-            <img src="{{ asset('storage/images/featured-chair.png') }}" alt="Featured Product" class="w-full h-full object-contain">
-        </div>
-
-        <!-- Product Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1020.png') }}" alt="Product 1" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1021.png') }}" alt="Product 2" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1022.png') }}" alt="Product 3" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1023.png') }}" alt="Product 4" class="w-full aspect-square object-cover rounded">
-            </div>
-        </div>
-
-        <!-- Second Row -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1024.png') }}" alt="Product 5" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1025.png') }}" alt="Product 6" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1026.png') }}" alt="Product 7" class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-lg">
-                <img src="{{ asset('storage/images/EAC1027.png') }}" alt="Product 8" class="w-full aspect-square object-cover rounded">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Get Closer Section -->
-<section class="relative py-20 bg-dark">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Left Side - Map -->
-            <div class="relative h-[600px]">
-                <h2 class="text-5xl font-bold text-white mb-8 uppercase tracking-wider">
-                    GET CLOSER
+            <!-- Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 uppercase tracking-wider">
+                    START THE TOUR
                 </h2>
-                <p class="text-xl text-white/80 mb-4">WITH US</p>
-                <div class="h-[400px] bg-neutral rounded-lg overflow-hidden">
-                    <div id="map" class="w-full h-full">
-                        <!-- Map will be loaded here -->
-                    </div>
-                </div>
             </div>
 
-            <!-- Right Side - Contact Form -->
-            <div>
-                <h3 class="text-3xl font-bold text-white mb-8 uppercase">WE ON THE PLACE</h3>
-                <form class="space-y-6">
-                    <div>
-                        <input type="text" name="name" placeholder="NAME" 
-                               class="w-full bg-transparent border-2 border-primary/50 rounded-lg p-4 text-white">
+            <!-- Cards -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-2xl font-bold text-secondary mb-4">ABOUT US</h2>
+                    <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
+                        <img src="{{ asset('images/ABOUT-US.png') }}" alt="about us"
+                            class="w-full h-full object-cover object-center">
                     </div>
-                    <div>
-                        <input type="email" name="email" placeholder="EMAIL" 
-                               class="w-full bg-transparent border-2 border-primary/50 rounded-lg p-4 text-white">
-                    </div>
-                    <div>
-                        <textarea name="message" placeholder="MESSAGE" rows="6"
-                                  class="w-full bg-transparent border-2 border-primary/50 rounded-lg p-4 text-white"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg uppercase hover:bg-primary-dark transition">
-                        SUBMIT
-                    </button>
-                </form>
+                </div>
 
-                <!-- Social Media Section -->
-                <div class="mt-12">
-                    <h3 class="text-3xl font-bold text-white mb-6 uppercase">FOLLOW US ON</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-white hover:text-primary transition">
-                            <img src="{{ asset('storage/images/instagram.png') }}" alt="Instagram" class="w-12 h-12">
-                        </a>
-                        <a href="#" class="text-white hover:text-primary transition">
-                            <img src="{{ asset('storage/images/linkedin.png') }}" alt="LinkedIn" class="w-12 h-12">
-                        </a>
+                <div class="flex flex-col items-center">
+                    <h2 class="text-2xl font-bold text-secondary mb-4">COLLECTION</h2>
+                    <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
+                        <img src="{{ asset('images/COLLECTION.png') }}" alt="collection"
+                            class="w-full h-full object-cover object-bottom">
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h2 class="text-2xl font-bold text-secondary mb-4">CONTACT US</h2>
+                    <div class="w-full h-[250px] rounded-t-3xl flex items-center justify-center bg-[#545454]">
+                        <img src="{{ asset('images/LOGO.png') }}" alt="contact logo" class="h-32 w-auto" style="scale: 2.5;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    {{-- How We Work Section --}}
+    <section class="relative bg-image-light py-16 shadow-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1
+                    class="inline-block bg-[#938272] text-white text-3xl md:text-6xl font-bold px-8 py-3 rounded-lg shadow-lg uppercase">
+                    HOW WE WORK
+                </h1>
+            </div>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div
+                    class="bg-gradient-to-b from-[#938272] via-[#938172] to-[#6D6257] text-white rounded-2xl shadow-lgtext-justify">
+                    <img src="{{ asset('images/INNO.png') }}" alt="" class="object-contain w-full">
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-gradient-to-b from-[#938272] via-[#938172] to-[#6D6257] text-white rounded-2xl shadow-lg text-justify">
+                    <img src="{{ asset('images/MONI.png') }}" alt="" class="object-contain w-full">
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-gradient-to-b from-[#938272] via-[#938172] to-[#6D6257] text-white rounded-2xl shadow-lg text-justify">
+                    <img src="{{ asset('images/COMMU.png') }}" alt="" class="object-contain w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOT PRODUCT SECTION -->
+    <section class="relative bg-image-light py-20 my-16">
+        <div class="w-full px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-wide text-primary">
+                    HOT PRODUCT
+                </h2>
+            </div>
+
+            <!-- Slider -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    @foreach(['EAC1020.png', 'EAC1021.png', 'EAC1022.png', 'EAC1023.png', 
+                     'EAC1024.png', 'EAC1025.png', 'EAC1026.png', 'EAC1027.png'] as $product)
+                        <div class="swiper-slide">
+                            <div class="bg-primary rounded-2xl p-6 flex justify-center items-center">
+                                <img src="{{ asset('images/product/' . $product) }}" alt="{{ $product }}" class="rounded-xl max-h-64 object-contain">
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-16 px-8 bg-img-custom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+            <div class="text-center mb-12 py-6">
+                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-wide text-white mt-4">
+                    CUSTOM
+                </h2>
+                <p class="text-lg text-white/90 mt-4">Every space has a story, and we believe that furniture should be part
+                    of
+                    that story. Through our Custom Order service, you can specify the design, size, materials, and finish to
+                    suit your business or personal needs.
+                </p>
+            </div>
+        </div>
+    </section>
 @endsection
