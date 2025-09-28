@@ -59,7 +59,7 @@
 
             <!-- Cards -->
             <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-center">
-                <a href="{{ route('about') }}">
+                <a href="{{ route('about') }}" class="hover:translate-y-1 transition-transform duration-300">
                     <div class="flex flex-col items-center">
                         <h2 class="text-2xl font-bold text-secondary mb-4">ABOUT US</h2>
                         <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
@@ -69,7 +69,7 @@
                     </div>
                 </a>
 
-                <a href="{{ route('collection') }}">
+                <a href="{{ route('collection') }}" class="hover:translate-y-1 transition-transform duration-300">
                     <div class="flex flex-col items-center">
                         <h2 class="text-2xl font-bold text-secondary mb-4">COLLECTION</h2>
                         <div class="w-full h-[250px] rounded-t-3xl overflow-hidden bg-[#545454]">
@@ -79,7 +79,7 @@
                     </div>
                 </a>
 
-                <a href="{{ route('contact') }}">
+                <a href="{{ route('contact') }}" class="hover:translate-y-1 transition-transform duration-300">
                     <div class="flex flex-col items-center">
                         <h2 class="text-2xl font-bold text-secondary mb-4">CONTACT US</h2>
                         <div class="w-full h-[250px] rounded-t-3xl flex items-center justify-center bg-[#545454]">
