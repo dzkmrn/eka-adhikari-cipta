@@ -14,6 +14,11 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->    
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/akzidenzgrotesk" rel="stylesheet">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -26,6 +31,12 @@
         .bg-image-dark {
             background-image: url('{{ asset('images/DARK-BG.png') }}');
         }
+        .font-nav{
+            font-family: 'Akzidenz-Grotesk', sans-serif;
+        }
+        .font-home{
+            font-family: 'Readex Pro', sans-serif;
+        }
     </style>
 </head>
 
@@ -37,32 +48,34 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-around items-center h-16 border-b border-[#938272]">
                     <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center">
-                        <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto"
-                            style="scale: 1.5;">
-                    </div>
+                    <a href="{{route('home')}}">
+                        <div class="flex-shrink-0 flex items-center">
+                            <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto"
+                                style="scale: 1.5;">
+                        </div>
+                    </a>
 
                     <!-- Navigation Links -->
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
                             <a href="{{ route('home') }}"
-                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
                                 HOME
                             </a>
                             <a href="{{ route('about') }}"
-                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
                                 ABOUT US
                             </a>
                             <a href="{{ route('collection') }}"
-                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
                                 COLLECTION
                             </a>
                             <a href="{{ route('hot-product') }}"
-                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
                                 HOT PRODUCT
                             </a>
                             <a href="{{ route('contact') }}"
-                                class="nav-link text-nav px-3 py-2 text-sm font-medium text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
                                 CONTACT US
                             </a>
                         </div>
@@ -215,9 +228,9 @@
             loop: true,
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        
-
+        AOS.init();
     </script>
     @stack('scripts')
 </body>

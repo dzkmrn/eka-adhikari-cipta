@@ -30,7 +30,7 @@
         </div>
     </section> --}}
 
-    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-img-limited-off md:bg-center bg-left">
+    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-img-limited-off md:bg-center bg-left" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 m-auto relative -translate-y-[70px]">
                 <button id="scrollBtn"
@@ -45,7 +45,7 @@
         class="relative min-h-screen py-16 px-4 sm:px-6 lg:px-16 bg-image-dark bg-center bg-cover object-cover bg-no-repeat"
         style="width: 100%;">
         <!-- Product Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8" id="product">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8" id="product" data-aos="fade-up">
             @foreach (['EAC1236.png', 'EAC1023.png', 'EAC1022.png', 'EAC1238.png', 'EAC1020.png', 'EAC1247.png', 'EAC1237.png', 'EAC204.png'] as $item)
                 <div class="bg-gradient-to-b from-[#AFAFAF] via-[#C6C6C6] to-[#E6E6E6] p-4 rounded-xl">
                     <img src="{{ asset('images/product/' . $item) }}" alt="Product {{ $loop->index + 1 }}"
@@ -54,26 +54,6 @@
             @endforeach
             
         </div>
-
-        {{-- <!-- Second Row -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
-            <div class="bg-white p-4 rounded-xl">
-                <img src="{{ asset('images/product/EAC1024.png') }}" alt="Product 5"
-                    class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-xl">
-                <img src="{{ asset('images/product/EAC1025.png') }}" alt="Product 6"
-                    class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-xl">
-                <img src="{{ asset('images/product/EAC1026.png') }}" alt="Product 7"
-                    class="w-full aspect-square object-cover rounded">
-            </div>
-            <div class="bg-white p-4 rounded-xl">
-                <img src="{{ asset('images/product/EAC1027.png') }}" alt="Product 8"
-                    class="w-full aspect-square object-cover rounded">
-            </div>
-        </div> --}}
     </section>
 @endsection
 

@@ -17,12 +17,12 @@
 @section('content')
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-top justify-center bg-img-about-us pt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-12 m-auto">
-                <h1 class="text-5xl md:text-7xl font-bold text-primary mb-4 uppercase tracking-wider">
+                <h1 class="text-5xl md:text-9xl font-home text-primary mb-4 uppercase tracking-wider">
                     WARM GREETING
                 </h1>
-                <p class="text-lg text-primary mt-4">
+                <p class="text-3xl md:text-7xl text-primary mt-4">
                     FROM EKA ADHIKARI CIPTA
                 </p>
             </div>
@@ -30,7 +30,7 @@
     </section>
 
     <section class="bg-white py-16 bg-image-light object-cover bg-center bg-no-repeat">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
                 <!-- Left: Logo -->
@@ -40,7 +40,7 @@
 
                 <!-- Right: Text -->
                 <div>
-                    <h3 class="text-4xl md:text-6xl font-bold text-primary mb-6">ABOUT US</h3>
+                    <h3 class="text-4xl md:text-6xl font-home text-primary mb-6">ABOUT US</h3>
                     <p class="text-primary leading-relaxed">
                         Eka adhikari cipta is your trusted source for premium rattan furniture.
                         We bring you high-quality and durable designs that elevate any space.
@@ -52,7 +52,7 @@
         </div>
     </section>
     <section class="pb-16 px-4 bg-image-light object-cover bg-center bg-no-repeat">
-        <div class="max-w-7xl mx-auto space-y-32">
+        <div class="max-w-7xl mx-auto space-y-32" data-aos="fade-up">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-0 items-center">
                 <div class="relative px-4 lg:px-0">
                     <img src="{{ asset('images/WAREHOUSE.png') }}" alt="Rattan Furniture Workshop"
@@ -61,7 +61,7 @@
                 <div class="relative px-4 lg:px-0">
                     <div
                         class="relative lg:absolute bg-primary text-white p-8 shadow-lg md:w-[150%] md:-ml-60 top-0 md:top-1/2 md:-translate-y-[220px] -translate-y-[250px] z-10">
-                        <h3 class="text-xl font-bold leading-tight text-justify">
+                        <h3 class="text-xl font-home leading-tight text-justify">
                             EKA ADHIKARI CIPTA AIM TO INTRODUCE LOCAL RATTAN FURNITURE TO THE INTERNATIONAL MARKET, OFFERING
                             INNOVATIVE DESIGNS AND THE HIGHEST QUALITY.
                         </h3>
@@ -82,7 +82,7 @@
                         class="w-full h-96 object-cover rounded-lg shadow-lg brightness-50">
                     <div class="absolute inset-0 flex items-center justify-center rounded-lg">
                         <h2
-                            class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center tracking-wider px-6">
+                            class="text-4xl md:text-5xl lg:text-6xl font-home text-white text-center tracking-wider px-6">
                             TO PROVIDE THE BEST EXPERIENCE
                         </h2>
                     </div>
@@ -102,9 +102,9 @@
         </div>
     </section>
     <section class="my-6 py-16 px-4 bg-image-dark object-cover bg-center bg-no-repeat">
-        <div class="max-w-7xl mx-auto space-y-8">
+        <div class="max-w-7xl mx-auto space-y-8" data-aos="fade-up">
             <div>
-                <h1 class="text-center text-4xl md:text-6xl font-bold text-white mb-6">INTRODUCING OUR TEAM</h1>
+                <h1 class="text-center text-4xl md:text-6xl font-home text-white mb-6">INTRODUCING OUR TEAM</h1>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 mb-0 items-top">
                 <div class="bg-[#E6E6E6] ms-0 md:ms-4">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="flex flex-col">
                     <div class="relative h-fit p-8 bg-[#ECECEC]">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl">ADEN P. MUNTAZ</h1>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">ADEN P. MUNTAZ</h1>
                         <p class="text-[#404040] text-2xl md:text-3xl mt-2">CEO of Eka Adhikari Cipta</p>
                     </div>
                     <div class="relative p-8 bg-[#DDDDDD] h-full">
@@ -132,7 +132,7 @@
                 <div class="bg-[#E6E6E6] flex flex-col">
                     <img src="{{ asset('images/person/CFO.png') }}" alt="CFO" class="w-full md:w-auto">
                     <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl">ABDUL MALIK K. A.</h1>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">ABDUL MALIK K. A.</h1>
                         <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Finance Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
@@ -152,7 +152,7 @@
                 <div class="bg-[#E6E6E6] flex flex-col">
                     <img src="{{ asset('images/person/COO.png') }}" alt="COO" class="w-full md:w-auto">
                     <div class="h-fit p-8 bg-[#ECECEC] w-full">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl">M. ZACKY SULTHONI</h1>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">M. ZACKY SULTHONI</h1>
                         <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Operational Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
@@ -168,7 +168,7 @@
                 <div class="bg-[#E6E6E6] flex flex-col">
                     <img src="{{ asset('images/person/CMO.png') }}" alt="CMO" class="w-full md:w-auto">
                     <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl">IRGI AQIL D. M.</h1>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">IRGI AQIL D. M.</h1>
                         <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Marketing Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
@@ -187,7 +187,7 @@
                 <div class="bg-[#E6E6E6] flex flex-col">
                     <img src="{{ asset('images/person/CIO.png') }}" alt="CIO" class="w-full md:w-auto">
                     <div class="h-fit p-8 bg-[#ECECEC] w-full">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl">ABDUL AFIF</h1>
+                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">ABDUL AFIF</h1>
                         <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Information Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">

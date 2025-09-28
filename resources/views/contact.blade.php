@@ -21,9 +21,9 @@
 @section('content')
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center bg-img-contact justify-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-12 m-auto">
-                <h1 class="text-5xl md:text-8xl font-bold text-white mb-4 uppercase tracking-wider">
+                <h1 class="text-5xl md:text-8xl font-home text-white mb-4 uppercase tracking-wider">
                     GET CLOSER
                 </h1>
                 <p class="text-3xl md:text-7xl text-white mt-4">
@@ -35,7 +35,7 @@
 
     <!-- Contact and Location Section -->
     <section class="py-20 bg-image-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Left Side - Map -->
                 <div>
@@ -108,7 +108,7 @@
 
     <!-- Social Media Section -->
     <section class="py-20 bg-image-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center">
                 <div class="bg-gray-800 px-8 py-4 rounded-lg inline-block mb-12">
                     <h2 class="text-2xl font-bold text-white uppercase tracking-wider">FOLLOW US ON</h2>

@@ -20,9 +20,9 @@
 
 @section('content')
     <section class="relative min-h-screen flex items-center bg-img-collection justify-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-12 m-auto">
-                <h1 class="text-5xl md:text-8xl font-bold text-white mb-4 uppercase tracking-wider">
+                <h1 class="text-5xl md:text-8xl font-home text-white mb-4 uppercase tracking-wider">
                     OUR COLLECTION
                 </h1>
                 <p class="text-3xl md:text-7xl text-white mt-4">
@@ -34,7 +34,7 @@
 
     <!-- Product Grid Section -->
     <section class="py-16 bg-image-light object-cover bg-no-repeat bg-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 @foreach($paginatedProducts as $product)
                     @php

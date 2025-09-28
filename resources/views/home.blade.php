@@ -35,8 +35,8 @@
     <!-- Warm Greeting Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-20 bg-image-home bg-left md:bg-bottom">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 m-auto relative -translate-y-[70px]">
-                <h1 class="text-5xl md:text-9xl font-bold text-primary mb-4 uppercase tracking-wider">
+            <div class="text-center mb-12 m-auto relative -translate-y-[70px]" data-aos="fade-up">
+                <h1 class="text-5xl md:text-9xl font-home text-primary mb-4 uppercase tracking-wider">
                     YOUR TRUSTED
                 </h1>
                 <p class="text-3xl md:text-7xl text-primary mt-4">
@@ -48,11 +48,11 @@
 
     <!-- Start the tour Section -->
     <section class="pt-20 bg-image-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
 
             <!-- Title -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 uppercase tracking-wider">
+                <h2 class="text-4xl md:text-5xl font-home text-primary mb-8 uppercase tracking-wider">
                     START THE TOUR
                 </h2>
             </div>
@@ -93,7 +93,7 @@
 
     {{-- How We Work Section --}}
     <section class="relative bg-image-light py-16 shadow-up">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-16">
                 <h1
                     class="inline-block bg-[#938272] text-white text-3xl md:text-6xl font-bold px-8 py-3 rounded-lg shadow-lg uppercase">
@@ -123,9 +123,9 @@
 
     <!-- HOT PRODUCT SECTION -->
     <section class="relative bg-image-light py-20 my-16">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-up">
             <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-wide text-primary">
+                <h2 class="text-4xl md:text-6xl font-home uppercase tracking-wide text-primary">
                     HOT PRODUCT
                 </h2>
             </div>
@@ -146,9 +146,9 @@
     </section>
 
     <section class="relative py-16 px-8 bg-img-custom">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16" data-aos="fade-up">
             <div class="text-center mb-12 py-6">
-                <h2 class="text-4xl md:text-6xl font-bold uppercase tracking-wide text-white mt-4">
+                <h2 class="text-4xl md:text-6xl font-home uppercase tracking-wide text-white mt-4">
                     CUSTOM
                 </h2>
                 <p class="text-lg text-white/90 mt-4">Every space has a story, and we believe that furniture should be part
