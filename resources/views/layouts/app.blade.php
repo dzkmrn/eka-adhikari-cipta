@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Google Fonts -->    
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/akzidenzgrotesk" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/fd5fc4060a6e4d402fc0c45fad1f852f?family=F29LT+Zarid+Display+Regular" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/fd5fc4060a6e4d402fc0c45fad1f852f?family=F29LT+Zarid+Display+Regular"
+        rel="stylesheet">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -32,14 +34,16 @@
         .bg-image-dark {
             background-image: url('{{ asset('images/DARK-BG.png') }}');
         }
-        .font-nav{
+
+        .font-nav {
             font-family: 'Akzidenz-Grotesk', sans-serif;
         }
-        .font-home{
+
+        .font-home {
             font-family: 'Readex Pro', sans-serif;
         }
 
-        .font-desc{
+        .font-desc {
             font-family: '29LT Zarid Serif', serif;
             src: url('{{asset('fonts/29lt-zarid-serif-regular.ttf')}}') format('truetype');
             font-weight: normal;
@@ -59,8 +63,8 @@
                     <!-- Logo -->
                     <a href="{{route('home')}}">
                         <div class="flex-shrink-0 flex items-center">
-                            <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto"
-                                style="scale: 1.5;">
+                            <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}"
+                                alt="EAC Logo" class="h-10 w-auto" style="scale: 1.5;">
                         </div>
                     </a>
 
@@ -244,12 +248,20 @@
     <script>
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
+            const currentRoute = "{{ request()->route()->getName() }}"; // kirim nama route ke JS
+
             if (window.scrollY > 0) {
-                navbar.classList.remove('bg-transparent');
-                navbar.classList.add('bg-[#FDFDFD]/90');
+                if (['collection', 'contact', 'hot-product'].includes(currentRoute)) {
+                    navbar.classList.remove('bg-transparent');
+                    navbar.classList.add('bg-dark/90');
+                } else {
+                    navbar.classList.remove('bg-transparent');
+                    navbar.classList.add('bg-[#FDFDFD]/90');
+                }
             } else {
                 navbar.classList.add('bg-transparent');
                 navbar.classList.remove('bg-[#FDFDFD]/90');
+                navbar.classList.remove('bg-dark/90');
             }
         });
     </script>
