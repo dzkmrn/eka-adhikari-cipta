@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Google Fonts -->    
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/akzidenzgrotesk" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/fd5fc4060a6e4d402fc0c45fad1f852f?family=F29LT+Zarid+Display+Regular"
+        rel="stylesheet">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -31,11 +34,21 @@
         .bg-image-dark {
             background-image: url('{{ asset('images/DARK-BG.png') }}');
         }
-        .font-nav{
+
+        .font-nav {
             font-family: 'Akzidenz-Grotesk', sans-serif;
         }
-        .font-home{
+
+        .font-home {
             font-family: 'Readex Pro', sans-serif;
+        }
+
+        .font-desc {
+            font-family: '29LT Zarid Serif', serif;
+            src: url('{{asset('fonts/29lt-zarid-serif-regular.ttf')}}') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
         }
     </style>
 </head>
@@ -50,8 +63,8 @@
                     <!-- Logo -->
                     <a href="{{route('home')}}">
                         <div class="flex-shrink-0 flex items-center">
-                            <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}" alt="EAC Logo" class="h-10 w-auto"
-                                style="scale: 1.5;">
+                            <img src="{{ request()->routeIs('collection') || request()->routeIs('contact') || request()->routeIs('hot-product') ? asset('images/LIGHT-LOGO.png') : asset('images/DARK-LOGO.png') }}"
+                                alt="EAC Logo" class="h-10 w-auto" style="scale: 1.5;">
                         </div>
                     </a>
 
@@ -59,23 +72,23 @@
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
                             <a href="{{ route('home') }}"
-                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-xl text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('home') ? 'text-primary-dark' : '' }}">
                                 HOME
                             </a>
                             <a href="{{ route('about') }}"
-                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-xl text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('about') ? 'text-primary-dark' : '' }}">
                                 ABOUT US
                             </a>
                             <a href="{{ route('collection') }}"
-                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-xl text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('collection') ? 'text-primary-dark' : '' }}">
                                 COLLECTION
                             </a>
                             <a href="{{ route('hot-product') }}"
-                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-xl text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('hot-product') ? 'text-primary-dark' : '' }}">
                                 HOT PRODUCT
                             </a>
                             <a href="{{ route('contact') }}"
-                                class="nav-link text-nav font-nav px-3 py-2 text-sm text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
+                                class="nav-link text-nav font-nav px-3 py-2 text-xl text-secondary hover:text-primary-dark transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-primary-dark' : '' }}">
                                 CONTACT US
                             </a>
                         </div>
@@ -231,6 +244,26 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const currentRoute = "{{ request()->route()->getName() }}"; // kirim nama route ke JS
+
+            if (window.scrollY > 0) {
+                if (['collection', 'contact', 'hot-product'].includes(currentRoute)) {
+                    navbar.classList.remove('bg-transparent');
+                    navbar.classList.add('bg-dark/90');
+                } else {
+                    navbar.classList.remove('bg-transparent');
+                    navbar.classList.add('bg-[#FDFDFD]/90');
+                }
+            } else {
+                navbar.classList.add('bg-transparent');
+                navbar.classList.remove('bg-[#FDFDFD]/90');
+                navbar.classList.remove('bg-dark/90');
+            }
+        });
     </script>
     @stack('scripts')
 </body>

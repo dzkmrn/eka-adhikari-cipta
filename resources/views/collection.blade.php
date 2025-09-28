@@ -49,7 +49,7 @@
                                 style="background: linear-gradient(to top, {{ $bgColor }} 50%, transparent 50%);">
                             </div>
                             <img src="{{ asset('images/product/' . $product['image']) }}" alt="{{ $product['name'] }}"
-                                class="h-full object-cover bg-center z-20">
+                                class="h-full object-contain bg-center z-20">
 
                             <!-- Overlay 70% bawah -->
                         </div>
@@ -64,10 +64,20 @@
 
                             <!-- Product Specifications -->
                             <div class="space-y-1 text-xs text-gray-600">
-                                <p><span class="text-gray-500">Material:</span> {{ $product['material'] }}</p>
-                                <p><span class="text-gray-500">Finishing:</span> {{ $product['finishing'] }}</p>
-                                <p><span class="text-gray-500">Color:</span> {{ $product['color'] }}</p>
-                                <p><span class="text-gray-500">Dimension:</span> {{ $product['dimension'] }}</p>
+                                @if ($product['dimension'] && !is_array($product['dimension']))
+                                    <p><span class="text-gray-500">Material:</span> {{ $product['material'] }}</p>
+                                    <p><span class="text-gray-500">Finishing:</span> {{ $product['finishing'] }}</p>
+                                    <p><span class="text-gray-500">Color:</span> {{ $product['color'] }}</p>
+                                    <p><span class="text-gray-500">Dimension:</span> {{ $product['dimension'] }}</p>    
+                                    @endif
+                                    @if ($product['dimension'] && is_array($product['dimension']))
+                                    <p><span class="text-gray-500">Material:</span> {{ $product['material'] }}</p>
+                                    <p><span class="text-gray-500">Finishing:</span> {{ $product['finishing'] }}</p>
+                                    <p><span class="text-gray-500">Color:</span> {{ $product['color'] }}</p>
+                                    @foreach ($product['dimension'] as $key => $value)
+                                        <p><span class="text-gray-500">{{ $key }}:</span> {{ $value }}</p>
+                                    @endforeach
+                                @endif
                             </div>
                         </div>
                     </div>

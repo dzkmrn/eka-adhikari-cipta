@@ -17,43 +17,43 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=91xL=54xW=62'
             ],
             [
                 'code' => 'EAC1021',
                 'name' => 'CHAIRCROSS RATTAN DINING CHAIR',
                 'image' => 'EAC1021.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
+                'material' => 'Natural Rattan Frame, Synthetic Leather Cushion',
+                'finishing' => 'NC (For Frame)',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=92xL=65xW=65'
             ],
             [
                 'code' => 'EAC1022',
                 'name' => 'KING RATTAN DINING CHAIR',
                 'image' => 'EAC1022.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
+                'material' => 'Natural Rattan Frame, Synthetic Leather Cushion',
+                'finishing' => 'NC (For Frame)',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=92xL=62xW=64'
             ],
             [
                 'code' => 'EAC1023',
                 'name' => 'VIRGO RATTAN DINING CHAIR',
                 'image' => 'EAC1023.png',
-                'material' => 'Natural Rattan',
+                'material' => 'NaturalRattanFrame',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=97xL=58xW=50'
             ],
             [
                 'code' => 'EAC1024',
                 'name' => 'MINIMALIST RATTAN DINING CHAIR',
                 'image' => 'EAC1024.png',
-                'material' => 'Natural Rattan',
+                'material' => 'Natural Rattan Frame',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=51xL=43xW=48'
             ],
             [
                 'code' => 'EAC1025',
@@ -62,61 +62,61 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'White',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=100xL=60xW=50'
             ],
             [
                 'code' => 'EAC1026',
                 'name' => 'WEBBING RATTAN DINING CHAIR',
                 'image' => 'EAC1026.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
+                'material' => 'TeakWood, Natural Rattan',
+                'finishing' => 'NC,PU(ForFrame)',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=82xL=50xW=56'
             ],
             [
                 'code' => 'EAC1027',
                 'name' => 'PEANUT RATTAN DINING CHAIR',
                 'image' => 'EAC1027.png',
-                'material' => 'Natural Rattan',
+                'material' => 'TeakWood, Rattan Webbing',
                 'finishing' => 'NC',
-                'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'color' => ':Dark Brown',
+                'dimension' => 'H=58xL=50xW=56'
             ],
             [
                 'code' => 'EAC1028',
                 'name' => 'MINIMALIST RATTAN OFFICES CHAIR',
                 'image' => 'EAC1028.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
+                'material' => 'TeakWood,Rattan Webbing',
+                'finishing' => 'NC, PU(ForFrame)',
                 'color' => 'Glaze Brown',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=79xL=56xW=61'
             ],
             [
                 'code' => 'EAC1029',
                 'name' => 'BISTRO RATTAN DINING CHAIR',
                 'image' => 'EAC1029.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
-                'color' => 'Blue/Black',
-                'dimension' => 'H-91xL-54xW-62'
+                'material' => 'Natural Rattan Frame, Synthetic Rattan',
+                'finishing' => 'Melamine',
+                'color' => 'Green, Black, Brown',
+                'dimension' => 'H=98xL=45xW=45'
             ],
             [
                 'code' => 'EAC1031',
                 'name' => 'RUSH RATTAN DINING CHAIR',
                 'image' => 'EAC1031.png',
-                'material' => 'Natural Rattan',
+                'material' => 'Natural Rattan, Seagrass',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=91xL=52xW=46'
             ],
             [
                 'code' => 'EAC1032',
                 'name' => 'TRELLIS RATTAN DINING CHAIR',
                 'image' => 'EAC1032.png',
-                'material' => 'Natural Rattan',
-                'finishing' => 'NC',
+                'material' => 'Natural Rattan, Metal',
+                'finishing' => 'Melamine',
                 'color' => 'Honey',
-                'dimension' => 'H-91xL-54xW-62'
+                'dimension' => 'H=90xL=49xW=63'
             ],
             [
                 'code' => 'EAC1033',
@@ -125,7 +125,7 @@ class CollectionController extends Controller
                 'material' => 'Rope, Metal Frame',
                 'finishing' => 'Powder Coating',
                 'color' => 'Grey, Black (for Frame)',
-                'dimension' => 'H-78xL-52xW-55'
+                'dimension' => 'H=78xL=45xW=55'
             ],
             [
                 'code' => 'EAC1034',
@@ -134,7 +134,7 @@ class CollectionController extends Controller
                 'material' => 'Water Hyacinth, Mahonia Frame',
                 'finishing' => 'PU (for Frame), NC',
                 'color' => 'Natural',
-                'dimension' => 'H-99xL-48xW-46'
+                'dimension' => 'H=99xL=48xW=46'
             ],
             [
                 'code' => 'EAC1035',
@@ -143,7 +143,7 @@ class CollectionController extends Controller
                 'material' => 'Teak Wood, Leather',
                 'finishing' => 'NC',
                 'color' => 'Natural, Brown',
-                'dimension' => 'H-79xL-57xW-53'
+                'dimension' => 'H=79xL=57xW=63'
             ],
             [
                 'code' => 'EAC1236',
@@ -152,7 +152,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Black',
-                'dimension' => 'H-63xL-50xW-66'
+                'dimension' => 'H=83xL=50xW=60'
             ],
             [
                 'code' => 'EAC1237',
@@ -161,7 +161,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'Glaze',
                 'color' => 'Grey',
-                'dimension' => 'H-79xL-60xW-60'
+                'dimension' => 'H=79xL=60xW=60'
             ],
             [
                 'code' => 'EAC1238',
@@ -170,7 +170,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural Brown',
-                'dimension' => 'H-74xL-50xW-67'
+                'dimension' => 'H=74xL=50xW=67'
             ],
             [
                 'code' => 'EAC1239',
@@ -179,7 +179,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'Glaze',
                 'color' => 'Brown, Blue, White',
-                'dimension' => 'H-70xL-70xW-68'
+                'dimension' => 'H=70xL=70xW=68'
             ],
             [
                 'code' => 'EAC1240',
@@ -188,34 +188,34 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-87xL-66xW-58'
+                'dimension' => 'H=87xL=66xW=58'
             ],
             [
                 'code' => 'EAC1242',
                 'name' => 'QUENTIC RATTAN LOUNGE CHAIR',
                 'image' => 'EAC1242.png',
-                'material' => 'Synthetic Rattan, Metal Frame',
-                'finishing' => 'NC',
+                'material' => 'Metal Frame, Synthetic Rattan',
+                'finishing' => '-',
                 'color' => 'Black',
-                'dimension' => 'H-88xL-60xW-70'
+                'dimension' => 'H=88xL=60xW=70'
             ],
             [
                 'code' => 'EAC1243',
                 'name' => 'THRILLIC RATTAN LAZY CHAIR',
                 'image' => 'EAC1243.png',
-                'material' => 'Natural Rattan, Teak Frame',
+                'material' => 'Synthetic Rattan, Teak Frame',
                 'finishing' => 'PU (for Frame)',
-                'color' => 'Natural Beige',
-                'dimension' => 'H-75xL-80xW-57.5'
+                'color' => 'Natural, Beige',
+                'dimension' => 'H=75xL=80xW=67.5'
             ],
             [
                 'code' => 'EAC1244',
                 'name' => 'BIVING ROPE LAZY ARMCHAIR',
                 'image' => 'EAC1244.png',
-                'material' => 'Rope, Metal Frame',
+                'material' => 'Teak Frame,Rope',
                 'finishing' => 'PU',
                 'color' => 'Natural',
-                'dimension' => 'H-67xL-70xW-74'
+                'dimension' => 'H=67xL=70xW=74'
             ],
             [
                 'code' => 'EAC1245',
@@ -224,16 +224,16 @@ class CollectionController extends Controller
                 'material' => 'Teak Frame, Rope',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-70xL-75xW-80'
+                'dimension' => 'H=70xL=75xW=80'
             ],
             [
                 'code' => 'EAC1246',
-                'name' => 'RIVTIC LAZY CHAIR',
+                'name' => 'BIVTIC LAZY CHAIR',
                 'image' => 'EAC1246.png',
                 'material' => 'Synthetic Rattan, Teak Frame',
-                'finishing' => 'Polite Framefit',
+                'finishing' => 'PU (for Frame)',
                 'color' => 'Brown, Beige',
-                'dimension' => 'H-70xL-75xW-80'
+                'dimension' => 'H=68xL=67xW=61'
             ],
             [
                 'code' => 'EAC1247',
@@ -242,25 +242,25 @@ class CollectionController extends Controller
                 'material' => 'Teak, Leather',
                 'finishing' => 'NC',
                 'color' => 'Brown',
-                'dimension' => 'H-62xL-82xW-94'
+                'dimension' => 'H=68xL=82xW=64'
             ],
             [
                 'code' => 'EAC1248',
                 'name' => 'BASIC LEATHER STRIP BENCH',
                 'image' => 'EAC1248.png',
-                'material' => 'Real Wood, Leather',
+                'material' => 'Teak Wood, Leather',
                 'finishing' => 'Water-Based Coating',
                 'color' => 'Natural, Black',
-                'dimension' => 'H-50xL-140xW-50'
+                'dimension' => 'H=45xL=40xW=120'
             ],
             [
                 'code' => 'EAC1249',
-                'name' => 'ARCHIVE LEATHER STRIP BENCH',
+                'name' => 'ARCHUVE LEATHER STRIP BENCH',
                 'image' => 'EAC1249.png',
-                'material' => 'Real Wood, Leather',
+                'material' => 'Teak Wood, Leather',
                 'finishing' => 'NC',
                 'color' => 'Dark Brown, Black',
-                'dimension' => 'H-46xL-140xW-50'
+                'dimension' => 'H=46xL=56xW=120'
             ],
             [
                 'code' => 'EAC1150',
@@ -268,8 +268,8 @@ class CollectionController extends Controller
                 'image' => 'EAC1150.png',
                 'material' => 'Natural Rattan, Foam',
                 'finishing' => 'NC',
-                'color' => 'Natural, White for Cushion',
-                'dimension' => 'H-74xL-53xW-53'
+                'color' => 'Natural, White (for Cushion)',
+                'dimension' => 'H=74xL=33xW=33'
             ],
             [
                 'code' => 'EAC1151',
@@ -278,61 +278,61 @@ class CollectionController extends Controller
                 'material' => 'Teak Wood, Rattan Webbing',
                 'finishing' => 'Water-Based Coating',
                 'color' => 'Natural',
-                'dimension' => 'H-70xL-57xW-55'
+                'dimension' => 'H=110xL=51xW=55'
             ],
             [
                 'code' => 'EAC1152',
                 'name' => 'LEATHER STRIP BARSTOOL',
                 'image' => 'EAC1152.png',
-                'material' => 'Leather, Teak',
-                'finishing' => 'Bm garit',
+                'material' => 'Leather,Teak',
+                'finishing' => 'blm ganti',
                 'color' => 'Black, Brown',
-                'dimension' => 'H-59xL-55xW-40'
+                'dimension' => 'H=95xL=55xW=40'
             ],
             [
                 'code' => 'EAC1153',
-                'name' => 'PLIO RATTAN BARSTOOL',
+                'name' => 'PLIC RATTAN BARSTOOL',
                 'image' => 'EAC1153.png',
-                'material' => 'Synthetic Rattan, Real',
+                'material' => 'Teak, Synthetic Peel',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-68xL-42xW-40'
+                'dimension' => 'H=66xL=42xW=40'
             ],
             [
                 'code' => 'EAC1154',
-                'name' => 'SLALY RATTAN BARSTOOL',
+                'name' => 'SALLY BARSTOOL',
                 'image' => 'EAC1154.png',
-                'material' => 'Teak, Rattan',
+                'material' => 'Teak, Loom',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-93xL-45xW-57'
+                'dimension' => 'H=103xL=45xW=51'
             ],
             [
                 'code' => 'EAC1155',
                 'name' => 'RUSCY RATTAN BARSTOOL',
                 'image' => 'EAC1155.png',
-                'material' => 'Teak, Iron',
+                'material' => 'Teak, Loom',
                 'finishing' => 'NC',
                 'color' => 'Black, Beige',
-                'dimension' => 'H-66xL-40xW-40'
+                'dimension' => 'H=65xL=40xW=40'
             ],
             [
                 'code' => 'EAC1156',
                 'name' => 'TRAFFIC RATTAN BARSTOOL',
                 'image' => 'EAC1156.png',
-                'material' => 'Teak, Synthetic Rattan',
+                'material' => 'Teak, Synthetic Peel',
                 'finishing' => 'NC',
                 'color' => 'Brown',
-                'dimension' => 'H-66xL-41xW-40'
+                'dimension' => 'H=66xL=41xW=60'
             ],
             [
                 'code' => 'EAC202',
                 'name' => 'DIAMOND RATTAN COFFEE TABLE',
                 'image' => 'EAC202.png',
-                'material' => 'Synthetic Natural Rattan',
+                'material' => 'Metal, Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-59xD-70'
+                'dimension' => 'H=39xD=70'
             ],
             [
                 'code' => 'EAC203',
@@ -341,7 +341,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan, Teak Wood',
                 'finishing' => 'NC',
                 'color' => 'Natural, Black',
-                'dimension' => 'H-40xD-80'
+                'dimension' => 'H=40xD=80'
             ],
             [
                 'code' => 'EAC204',
@@ -350,16 +350,16 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-52xD-45'
+                'dimension' => 'H=52xD=45'
             ],
             [
                 'code' => 'EAC205',
                 'name' => 'TRISK MINIMALIST RATTAN TABLE',
                 'image' => 'EAC205.png',
-                'material' => 'Natural Rattan Webbing',
+                'material' => 'Natural Rattan, Webbing',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-50xD-40'
+                'dimension' => 'H=51xD=40'
             ],
             [
                 'code' => 'EAC206',
@@ -368,25 +368,25 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-73xD-70'
+                'dimension' => 'H=73xD=70'
             ],
             [
                 'code' => 'EAC207',
                 'name' => 'MINIMALIST CUBE TABLE',
                 'image' => 'EAC207.png',
                 'material' => 'Synthetic Rattan, Teak Frame',
-                'finishing' => 'Polite Frame',
+                'finishing' => 'PU (Frame)',
                 'color' => 'Natural',
-                'dimension' => 'H-45xL-46xW-46'
+                'dimension' => 'H=62xL=46xW=46'
             ],
             [
                 'code' => 'EAC208',
                 'name' => 'MODERN RATTAN BEDSIDE TABLE',
                 'image' => 'EAC208.png',
                 'material' => 'Synthetic Rattan, Teak Frame',
-                'finishing' => 'Polite Frame',
+                'finishing' => 'NC, PU (For Frame)',
                 'color' => 'Natural',
-                'dimension' => 'H-60xL-40xW-51'
+                'dimension' => 'H=62xL=40xW=51'
             ],
             [
                 'code' => 'EAC301',
@@ -395,7 +395,7 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural Honey',
-                'dimension' => 'H-45xL-50xW-40'
+                'dimension' => 'H=45xL=50xW=40'
             ],
             [
                 'code' => 'EAC301',
@@ -404,52 +404,52 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural Honey',
-                'dimension' => 'H-47xL-44xW-42'
+                'dimension' => 'H=47xL=44xW=42'
             ],
             [
                 'code' => 'EAC303',
                 'name' => 'BOHEMIAN HYACINTH POUFFE',
                 'image' => 'EAC303.png',
-                'material' => 'Synthetic Water Hyacinth',
-                'finishing' => 'Polite Frame',
-                'color' => 'Natural',
-                'dimension' => 'H-50xL-32xW-32'
+                'material' => 'Teak & Water Hyacinths',
+                'finishing' => 'PU (For Frame)',
+                'color' => 'Green, Brown',
+                'dimension' => 'H=50xL=32xW=32'
             ],
             [
                 'code' => 'EAC304',
                 'name' => 'BOHEMIAN SEAGRASS POUFFE',
                 'image' => 'EAC304.png',
                 'material' => 'Teak & Seagrass',
-                'finishing' => 'Polite Frame',
+                'finishing' => 'PU (For Frame)',
                 'color' => 'Natural',
-                'dimension' => 'H-46xL-40xW-40'
+                'dimension' => 'H=45xL=40xW=40'
             ],
             [
                 'code' => 'EAC305',
                 'name' => 'LEATHER STRIP STOOL',
                 'image' => 'EAC305.png',
                 'material' => 'Teak, Leather',
-                'finishing' => 'Polite Frame',
+                'finishing' => 'PU (For Frame)',
                 'color' => 'Brown',
-                'dimension' => 'H-50xL-40xW-57'
+                'dimension' => 'H=50xL=40xW=57'
             ],
             [
                 'code' => 'EAC306',
                 'name' => 'PENDANT RATTAN STOOL',
                 'image' => 'EAC306.png',
-                'material' => 'Synthetic Rattan',
-                'finishing' => 'Polite Frame',
+                'material' => 'Teak, Synthetic Rattan',
+                'finishing' => 'PU (For Frame)',
                 'color' => 'Dark Brown, Beige',
-                'dimension' => 'H-46xL-44xW-44'
+                'dimension' => 'H=45xL=44xW=44'
             ],
             [
                 'code' => 'EAC401',
-                'name' => 'OVAL MINIMALIST RATTAN BASKET',
+                'name' => 'ROUND MINIMALIST RATTAN BASKET',
                 'image' => 'EAC401.png',
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural, Black',
-                'dimension' => 'H-40xD-41'
+                'dimension' => 'H=40xD=41'
             ],
             [
                 'code' => 'EAC402',
@@ -458,7 +458,7 @@ class CollectionController extends Controller
                 'material' => 'Banana Pseudo-Stem',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'H-37xD-47'
+                'dimension' => 'H=39xD=47'
             ],
             [
                 'code' => 'EAC403',
@@ -467,16 +467,19 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'Melamine',
                 'color' => 'Natural',
-                'dimension' => 'H-40xD-41'
+                'dimension' => 'H=40xD=41'
             ],
             [
                 'code' => 'EAC601',
                 'name' => 'ATLAS RECTANGLE RATTAN SET',
                 'image' => 'EAC601.png',
-                'material' => 'Natural',
+                'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'Chair H-79xL-64xW-62, Table H-73xD-70'
+                'dimension' => [
+                    'Chair Dimension' => 'H=91xL=54xW=62',
+                    'Table Dimension' => 'H=73xD=70'
+                ]
             ],
             [
                 'code' => 'EAC302',
@@ -485,7 +488,10 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
-                'dimension' => 'Chair H-74xL-67xW-70, Table H-52xD-45'
+                'dimension' => [
+                    'Chair Dimension' => 'H=74xL=67xW=70',
+                    'Table Dimension' => 'H=52xD=45'
+                ]
             ],
             [
                 'code' => 'EAC603',
@@ -494,7 +500,10 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'PU',
                 'color' => 'Grey',
-                'dimension' => 'Chair H-68xL-67xW-61, Table H-27xL-46xW-46'
+                'dimension' => [
+                    'Chair Dimension' => 'H=68xL=67xW=61',
+                    'Table Dimension' => 'H=27xL=46xW=46'
+                ]    
             ],
             [
                 'code' => 'EAC604',
@@ -503,7 +512,11 @@ class CollectionController extends Controller
                 'material' => 'Natural Rattan',
                 'finishing' => 'Glaze',
                 'color' => 'Brown, Blue, White',
-                'dimension' => 'Two Seater H-70xL-70x W-68, Three Seater H-55xL-70xW-72, Table L-90xW-57xH-42'
+                'dimension' => [
+                    'Two Seater Dimension' => 'H=70xL=70xW=68',
+                    'Three Seater Dimension' => 'H=155xL=70xW=72',
+                    'Table Dimension' => 'L=90xW=59xH=42'
+                ]
             ]
         ];
 
