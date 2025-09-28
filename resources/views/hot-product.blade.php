@@ -3,43 +3,66 @@
 @section('title', 'Hot Product - Eka Adhikari Cipta')
 @section('description', 'Discover our hot and trending rattan furniture products')
 
-@section('content')
-<!-- Hot Product Hero Section -->
-<section class="relative bg-dark pt-32 pb-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 uppercase tracking-wider">
-                HOT PRODUCT
-            </h1>
-            <p class="text-xl text-white/80">
-                Our Best Collection
-            </p>
-        </div>
-    </div>
-</section>
+@push('styles')
+    <style>
+        .bg-img-limited-off {
+            background-image: url('{{ asset('images/TRENT-ARNOLD-BG.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
-<!-- Product Grid Section -->
-<section class="py-20 bg-neutral">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Products will be dynamically loaded here -->
-            @foreach(['EAC1020.png', 'EAC1021.png', 'EAC1022.png', 'EAC1023.png', 
-                     'EAC1024.png', 'EAC1025.png', 'EAC1026.png', 'EAC1027.png'] as $product)
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden mb-4">
-                        <img src="{{ asset('storage/images/' . $product) }}" 
-                             alt="Product Image" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-semibold text-primary mb-2">
-                        {{ str_replace(['.png', 'EAC'], ['', 'Product '], $product) }}
-                    </h3>
-                    <p class="text-sm text-gray-600">
-                        Premium quality rattan furniture
-                    </p>
+        .text-nav {
+            color: white !important;
+        }
+    </style>
+@endpush
+
+@section('content')
+    <!-- Hot Product Hero Section -->
+    <!-- Limited Offering Section -->
+    {{-- <section class="min-h-screen relative py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-12 bg-img-limited-off">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg uppercase hover:bg-primary-dark transition">
+                    SCROLL DOWN
+                </button>
+            </div>
+        </div>
+    </section> --}}
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 bg-img-limited-off md:bg-center bg-left" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 m-auto relative -translate-y-[70px]">
+                <button id="scrollBtn"
+                    class="bg-[#404040] text-white text-3xl p-8 rounded-lg uppercase hover:bg-white hover:text-primary transition translate-y-[190%] md:-translate-x-[110%] md:translate-y-[190%]">
+                    SCROLL DOWN
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="relative min-h-screen py-16 px-4 sm:px-6 lg:px-16 bg-image-dark bg-center bg-cover object-cover bg-no-repeat"
+        style="width: 100%;">
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8" id="product" data-aos="fade-up">
+            @foreach (['EAC1236.png', 'EAC1023.png', 'EAC1022.png', 'EAC1238.png', 'EAC1020.png', 'EAC1247.png', 'EAC1237.png', 'EAC204.png'] as $item)
+                <div class="bg-gradient-to-b from-[#AFAFAF] via-[#C6C6C6] to-[#E6E6E6] p-4 rounded-xl">
+                    <img src="{{ asset('images/product/' . $item) }}" alt="Product {{ $loop->index + 1 }}"
+                        class="w-full aspect-square object-cover rounded-xl">
                 </div>
             @endforeach
+            
         </div>
-    </div>
-</section>
+    </section>
 @endsection
+
+@push('scripts')
+    <script>
+        document.getElementById('scrollBtn').addEventListener('click', function () {
+            document.getElementById('product').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+@endpush
