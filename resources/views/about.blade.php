@@ -41,7 +41,7 @@
                 <!-- Right: Text -->
                 <div>
                     <h3 class="text-4xl md:text-6xl font-home text-primary mb-6">ABOUT US</h3>
-                    <p class="text-primary leading-relaxed">
+                    <p class="text-primary leading-relaxed text-2xl font-desc">
                         Eka adhikari cipta is your trusted source for premium rattan furniture.
                         We bring you high-quality and durable designs that elevate any space.
                         With a focus on craftsmanship and customer satisfaction, we deliver
@@ -67,7 +67,7 @@
                         </h3>
                     </div>
                     <div class="mt-4 lg:mt-0 pt-4 -translate-y-[250px] md:translate-y-0">
-                        <p class="text-primary leading-relaxed text-justify">
+                        <p class="text-primary text-2xl leading-relaxed text-justify font-desc mt-16">
                             Eka adhikari cipta aiming to introduce the finest local rattan furniture to the global market,
                             setting new standards of design and excellence. We focus on innovation and the highest quality,
                             ensuring that each piece embodies the unique beauty of rattan while meeting the evolving needs
@@ -89,8 +89,8 @@
                 </div>
 
                 <div class="relative flex justify-center mt-[-5rem] z-10">
-                    <div class="max-w-2xl bg-[#5D4037]/90 backdrop-blur-sm text-white p-8 rounded-lg shadow-2xl">
-                        <p class="leading-relaxed text-center">
+                    <div class="max-w-2xl bg-[#938272] backdrop-blur-sm text-white p-8 rounded-lg shadow-2xl">
+                        <p class="leading-relaxed text-justify text-2xl font-desc">
                             We take pride in maintaining rigorous quality control throughout every stage of production. Our
                             continuous drive for innovation and improvement ensures that we consistently meet the
                             expectations of our customers, while our dedicated customer service team is always on hand to
@@ -133,10 +133,10 @@
                     <img src="{{ asset('images/person/CFO.png') }}" alt="CFO" class="w-full md:w-auto">
                     <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
                         <h1 class="text-[#404040] text-3xl md:text-6xl font-home">ABDUL MALIK K. A.</h1>
-                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Finance Officer</p>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2 font-desc">Chief Finance Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
-                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With his experience in finance, Abdul
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify font-desc">With his experience in finance, Abdul
                             Malik
                             has developed expertise in financial
                             management, budgeting, and corporate cash
@@ -151,12 +151,12 @@
                 <!-- COO -->
                 <div class="bg-[#E6E6E6] flex flex-col">
                     <img src="{{ asset('images/person/COO.png') }}" alt="COO" class="w-full md:w-auto">
-                    <div class="h-fit p-8 bg-[#ECECEC] w-full">
-                        <h1 class="text-[#404040] text-3xl md:text-6xl font-home">M. ZACKY SULTHONI</h1>
-                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Operational Officer</p>
+                    <div class="h-fit pt-8 px-8 pb-12 bg-[#ECECEC] w-full">
+                        <h1 class="text-[#404040] text-3xl md:text-5xl font-home">M. ZACKY SULTHONI</h1>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2 font-desc">Chief Operational Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
-                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">M. Zacky Sulthoni has experience and
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify font-desc">M. Zacky Sulthoni has experience and
                             expertise in managing production processes,
                             ensuring efficiency, and maintaining product
                             quality in accordance with international
@@ -169,10 +169,10 @@
                     <img src="{{ asset('images/person/CMO.png') }}" alt="CMO" class="w-full md:w-auto">
                     <div class="h-fit md:h-full p-8 bg-[#ECECEC] w-full">
                         <h1 class="text-[#404040] text-3xl md:text-6xl font-home">IRGI AQIL D. M.</h1>
-                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Marketing Officer</p>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2 font-desc">Chief Marketing Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
-                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With experience in marketing and
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify font-desc">With experience in marketing and
                             customer
                             management, Irgi has expertise in building
                             long-term relationships with clients and
@@ -188,10 +188,10 @@
                     <img src="{{ asset('images/person/CIO.png') }}" alt="CIO" class="w-full md:w-auto">
                     <div class="h-fit p-8 bg-[#ECECEC] w-full">
                         <h1 class="text-[#404040] text-3xl md:text-6xl font-home">ABDUL AFIF</h1>
-                        <p class="text-[#404040] text-2xl md:text-3xl mt-2">Chief Information Officer</p>
+                        <p class="text-[#404040] text-2xl md:text-3xl mt-2 font-desc">Chief Information Officer</p>
                     </div>
                     <div class="px-8 pt-8 pb-24 bg-[#DDDDDD] h-full">
-                        <p class="text-[#404040] text-2xl md:text-3xl text-justify">With his strong technological expertise,
+                        <p class="text-[#404040] text-2xl md:text-3xl text-justify font-desc">With his strong technological expertise,
                             Abdul Afif focuses on developing information
                             systems and implementing digital solutions
                             that support operational efficiency within the
