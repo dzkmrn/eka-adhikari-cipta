@@ -398,9 +398,9 @@ class CollectionController extends Controller
                 'dimension' => 'H=45xL=50xW=40'
             ],
             [
-                'code' => 'EAC301',
+                'code' => 'EAC302',
                 'name' => 'MINIMALIST RATTAN STOOL',
-                'image' => 'EAC301.png',
+                'image' => 'EAC302.png',
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural Honey',
@@ -482,9 +482,9 @@ class CollectionController extends Controller
                 ]
             ],
             [
-                'code' => 'EAC302',
+                'code' => 'EAC602',
                 'name' => 'QUILL MINIMALIST RATTAN SET',
-                'image' => 'EAC302.png',
+                'image' => 'EAC602.png',
                 'material' => 'Natural Rattan',
                 'finishing' => 'NC',
                 'color' => 'Natural',
