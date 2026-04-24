@@ -1,61 +1,265 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Eka Adhikari Cipta - Company Profile Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, responsive company profile website built with Laravel 12 and Tailwind CSS 4.0, showcasing the company's products, team, and services.
 
-## About Laravel
+## 🚀 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Responsive Design**: Fully responsive design that works seamlessly on all devices
+- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Multiple Pages**: Comprehensive page structure including Home, About Us, Collection, and Contact pages
+- **Image Gallery**: Extensive showcase of company products and collections
+- **Contact Form**: Functional contact form with client-side validation
+- **Team Section**: Professional leadership team showcase with profiles
+- **SEO Optimized**: Proper meta tags and semantic HTML structure
+- **Fast Performance**: Built with Vite for optimized asset compilation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📁 Project Structure
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```
+eka-adhikari-cipta/
+├── app/
+│   ├── Http/Controllers/     # Laravel controllers
+│   ├── Models/               # Database models
+│   └── Providers/            # Service providers
+├── bootstrap/                # Application bootstrap files
+├── config/                   # Configuration files
+├── database/                 # Migrations and seeders
+├── public/                   # Public assets and entry point
+│   ├── fonts/                # Custom fonts
+│   └── images/               # Extensive image assets
+│       ├── person/           # Team member photos
+│       └── product/          # Product images
+├── resources/
+│   ├── css/                  # Stylesheets
+│   ├── js/                   # JavaScript files
+│   └── views/                # Blade templates
+│       └── layouts/          # Layout components
+├── routes/                   # Application routes
+├── storage/                  # Storage directory
+├── tests/                    # Test files
+└── vendor/                   # Composer dependencies
+```
 
-## Learning Laravel
+## 🛠️ Technology Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Backend Framework**: Laravel 12
+- **Frontend Framework**: Tailwind CSS 4.0
+- **JavaScript**: Vanilla JavaScript for interactive elements
+- **Build Tool**: Vite 7.0.4
+- **PHP Version**: ^8.2
+- **Asset Compilation**: Laravel Vite Plugin
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 📄 Pages Overview
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Home Page (`/`)
+- Hero section with company introduction and branding
+- Features section highlighting company values and offerings
+- Statistics and achievements showcase
+- Call-to-action sections for user engagement
 
-## Laravel Sponsors
+### About Us Page (`/about`)
+- Company story and background information
+- Mission and vision statements
+- Core company values and principles
+- Leadership team showcase with professional profiles
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Collection Page (`/collection`)
+- Product collections organized by series (EAC series)
+- Comprehensive image galleries for each product category
+- Product features and benefits descriptions
+- Organized product categorization
 
-### Premium Partners
+### Contact Page (`/contact`)
+- Contact form with client-side validation
+- Complete company contact information
+- Business hours and location details
+- Social media integration
+- Google Maps integration for location
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Installation & Setup
 
-## Contributing
+### Prerequisites
+- PHP 8.2 or higher
+- Composer
+- Node.js (v18 or higher)
+- MySQL or compatible database
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Installation Steps
 
-## Code of Conduct
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd eka-adhikari-cipta
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-## Security Vulnerabilities
+3. **Install JavaScript dependencies**
+   ```bash
+   npm install
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## License
+5. **Configure database**
+   Update `.env` file with your database credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=eka_adhikari_cipta
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. **Run migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Build assets**
+   ```bash
+   npm run build
+   ```
+
+8. **Start development server**
+   ```bash
+   php artisan serve
+   ```
+
+## 🎨 Development
+
+### Development Commands
+
+- **Start development server**: `php artisan serve`
+- **Build assets for production**: `npm run build`
+- **Watch assets for development**: `npm run dev`
+- **Run tests**: `php artisan test`
+- **Clear cache**: `php artisan optimize:clear`
+
+### Asset Management
+
+The project uses Vite for asset compilation:
+- CSS is managed through Tailwind CSS 4.0
+- JavaScript files are in `/resources/js/`
+- Blade templates are in `/resources/views/`
+- Compiled assets are served from `/public/build/`
+
+## 📦 Dependencies
+
+### PHP Dependencies (via Composer)
+- Laravel Framework 12.x
+- Laravel Tinker 2.x
+- Laravel Sail (dev)
+- Laravel Pint (dev)
+- PHPUnit (dev)
+
+### JavaScript Dependencies (via npm)
+- Tailwind CSS 4.0
+- Vite 7.x
+- Axios 1.x
+- Laravel Vite Plugin 2.x
+
+## 🗃️ Database
+
+The application uses Laravel's Eloquent ORM with database migrations:
+
+- **Users table**: User management and authentication
+- **Cache table**: Application caching
+- **Jobs table**: Queue job management
+
+Run migrations with: `php artisan migrate`
+
+## 🧪 Testing
+
+The project includes PHPUnit test suites:
+
+- **Feature Tests**: Located in `tests/Feature/`
+- **Unit Tests**: Located in `tests/Unit/`
+
+Run tests with: `php artisan test`
+
+## 🔧 Configuration
+
+Key configuration files:
+
+- `config/app.php` - Application settings
+- `config/database.php` - Database configuration
+- `config/auth.php` - Authentication settings
+- `config/cache.php` - Caching configuration
+- `vite.config.js` - Vite build configuration
+
+## 📊 Assets
+
+The project includes extensive assets:
+
+- **Images**: Product photos, team member photos, and branding assets
+- **Fonts**: Custom typography (29LT Zarid Serif)
+- **Icons**: SVG icons and branding elements
+- **Styles**: Tailwind CSS with custom configurations
+
+## 🌐 Deployment
+
+### Production Build
+
+1. Build assets for production:
+   ```bash
+   npm run build
+   ```
+
+2. Optimize application:
+   ```bash
+   php artisan optimize
+   php artisan config:cache
+   php artisan route:cache
+   php artisan view:cache
+   ```
+
+3. Ensure storage permissions:
+   ```bash
+   chmod -R 775 storage bootstrap/cache
+   ```
+
+### Environment Variables
+
+Required environment variables for production:
+- `APP_ENV=production`
+- `APP_DEBUG=false`
+- Database connection details
+- Application key (`APP_KEY`)
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support and questions, please contact:
+- Email: [contact email]
+- Website: [company website]
+
+## 🙏 Acknowledgments
+
+- Laravel Framework
+- Tailwind CSS
+- Vite Build Tool
+- All contributors and team members
+
+---
+
+Built with ❤️ using Laravel and Tailwind CSS
